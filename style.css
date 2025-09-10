@@ -71,7 +71,7 @@
 /* /mmmm */
 
 .main-img {
-    background-image: url(/images/sec-1.png);
+    background-image: url(images/sec-1.png);
     height: 33vw;
 
     justify-items: center;
@@ -763,4 +763,5 @@
     color: white;
     width: 100vw;
     margin-bottom: 0;
+
 }
