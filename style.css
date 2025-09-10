@@ -1,0 +1,766 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+
+
+}
+
+:root {
+    --primary: #4ec0aa;
+    --secondary: #77dac4;
+    --third: #333333;
+    --fourth: #fefefe;
+    --fifth: #878787;
+    --sixth: #d4def7;
+}
+
+
+.header-mart {
+    justify-items: center;
+    align-content: center;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.main-header p {
+    font-size: 1.5vw;
+}
+
+
+.header-content {
+    width: 90%;
+}
+
+.cart {
+    display: flex;
+    align-items: flex-end;
+    font-size: 1vw;
+}
+
+.main-header span {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+
+.navigation {
+    display: flex;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 1vw;
+    margin-right: 1.5vw;
+    font-weight: bold;
+    color: var(--third);
+}
+
+.navigation a:hover {
+    color: var(--primary);
+}
+
+
+/* /mmmm */
+
+.main-img {
+    background-image: url(/images/sec-1.png);
+    height: 33vw;
+
+    justify-items: center;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-img .main-content {
+    width: 90%;
+
+    justify-items: center;
+    align-content: center;
+    color: var(--fourth);
+    font-size: 2.5vw;
+    font-weight: lighter;
+}
+
+.main-img .main-content p:nth-child(3) {
+    border: 0.2vw solid var(--primary);
+    font-size: 1vw;
+    margin-top: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.main-icon {
+    justify-items: center;
+    align-content: center;
+    margin: 5vw 5vw;
+}
+
+.icon-content {
+    display: flex;
+    width: 90%;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.icon {
+    text-align: center;
+    font-size: 1vw;
+    padding-right: 2vw;
+
+}
+
+.icon i {
+    font-size: 3vw;
+}
+
+.icon h4 {
+    margin-top: 3vw;
+}
+
+.icon p {
+    margin: 2vw;
+}
+
+
+.icon:hover i {
+    color: #4ec0aa;
+
+}
+
+.icon:hover h4 {
+    color: #4ec0aa;
+}
+
+/* //new collection */
+.collection {
+
+    justify-items: center;
+    align-content: center;
+    background-color: var(--sixth);
+
+
+
+}
+
+.collection-content {
+    text-align: center;
+    margin: 5vw;
+    width: 90%;
+
+}
+
+.new-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+}
+
+.underline {
+    align-items: center;
+    margin: 1vw 2vw;
+    height: 1vw;
+    width: 8vw;
+    background-image: repeating-linear-gradient(#4ec0aa 0% 20%, rgb(241, 241, 234) 20% 30%, #4ec0aa 30% 50%);
+    text-align: center;
+}
+
+.new-img-collection {
+    display: flex;
+    width: 90%;
+}
+
+.images {
+
+    position: relative;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.images img {
+    display: block;
+    height: 23vw;
+    width: 20vw;
+}
+
+.image-container {
+    display: flex;
+
+}
+
+.left-container {
+    background-color: black;
+    color: white;
+    width: 80%;
+    padding: 5px;
+}
+
+.right-container {
+    width: 20%;
+    background-color: #878787;
+    padding: 5px;
+    color: white;
+}
+
+
+.icons-join {
+    position: absolute;
+    top: 0.8rem;
+    bottom: 2.4rem;
+    left: 0.8rem;
+    right: 0.8rem;
+    background-color: rgba(15, 15, 15, 0.5);
+    /* height: 20vw; */
+    /* width: 20vw; */
+    transition: 0.4s ease;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.img-overlay {
+    display: flex;
+    gap: 1vw;
+
+}
+
+.overlay-cart {
+    border: 2px solid white;
+    padding: 0.5rem;
+    color: white;
+
+}
+
+.overlay-cart:hover {
+    border: none;
+    background-color: #333333;
+}
+
+.overlay-icons {
+    border: 2px solid white;
+    padding: 0.5rem;
+    color: white;
+}
+
+.overlay-icons:hover {
+    border: none;
+    background-color: #4ec0aa;
+}
+
+.images:hover .icons-join {
+    opacity: 1;
+}
+
+.images:hover .left-container {
+    background-color: #4ec0aa;
+}
+
+.images:hover .right-container {
+    background-color: #77dac4;
+}
+
+
+/* featured product */
+.featured-container {
+
+    justify-items: center;
+    align-content: center;
+}
+
+.feat-prod-content {
+    text-align: center;
+    margin: 5vw;
+    width: 90%;
+}
+
+.featured-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 2vw; */
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1.5vw;
+}
+
+.all-product {
+    display: flex;
+    gap: 1rem;
+    margin: 4rem 0;
+
+}
+
+.all-product p {
+    border: 2px solid black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: #333333;
+
+}
+
+.all-product p:hover {
+    background-color: #4ec0aa;
+    border: none;
+    color: white;
+}
+
+.f-p-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.f-p-images img {
+    width: 20vw;
+}
+
+.text {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px 10px; */
+}
+
+.right-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0.9vw;
+    /* padding-right: 2vw; */
+    display: inline-block;
+    /* margin: 5px; */
+    /* padding: 5px 10px; */
+}
+
+.images:hover .text {
+    opacity: 0;
+}
+
+.text div {
+    border: 1px solid black;
+    padding: 3px 8px;
+    background: white;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
+/* end of season sale */
+.season-sale-container {
+    /* text-align: center; */
+    background-image: url(images/umberalla\ image.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    /* margin-top: 30px; */
+
+}
+
+.season-sale-content {
+
+    color: white;
+
+
+
+}
+
+/* customer review */
+.customer-container {
+
+    justify-items: center;
+    align-content: center;
+}
+
+.customer-content {
+    text-align: center;
+    margin: 5vw;
+    width: 90%;
+}
+
+.customer-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+}
+
+.customer-image {
+    align-items: center;
+}
+
+.customer-image img {
+    margin-bottom: 1vw;
+}
+
+.customer-image p {
+    margin: 1.5vw;
+}
+
+.customer-content img {
+    border-radius: 50%;
+    height: 30vh;
+    width: 16vw;
+}
+
+.customer-image h4 {
+    color: #4ec0aa;
+}
+
+.review-image img {
+    width: 5vw;
+    height: 4vw;
+    margin-top: 1.5vw;
+    border: 4px solid;
+    transition: transform 0.3s;
+}
+
+.review-image img:hover {
+    border: 3px solid #4ec0aa;
+    transform: scale(0.9);
+}
+
+/* newsletter */
+.newsletter-container {
+    background-image: url(images/newsletter.jpeg);
+    justify-items: center;
+    align-content: center;
+}
+
+.newsletter-content {
+    text-align: center;
+    margin: 5vw;
+    width: 90%;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+}
+
+.underline-1 {
+    align-items: center;
+    margin: 1vw 2vw;
+    height: 1vw;
+    width: 8vw;
+    background-image: repeating-linear-gradient(#4ec0aa 0% 20%, rgb(241, 241, 234) 20% 30%, #4ec0aa 30% 50%);
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 36vw;
+    margin-top: 1rem;
+
+}
+
+.input-box input {
+    width: 80%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.input-box span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #4ec0aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+/* our partner */
+
+.our-partner-container {
+
+    justify-items: center;
+    align-content: center;
+    background-color: var(--sixth);
+}
+
+.our-partner-content {
+    text-align: center;
+    margin: 5vw;
+    width: 90%;
+}
+
+.our-partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+}
+
+.logo-image {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-image img {
+    border: 1px solid #4ec0aa;
+    width: 20vw;
+}
+
+/* latestnews */
+
+.latest-container {
+    justify-items: center;
+    align-content: center;
+}
+
+.latest-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+}
+
+.news-latest-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    align-items: center;
+}
+
+.latest-content {
+    margin: 5vw;
+    width: 90%;
+}
+
+.news-images {
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-images p {
+    margin-top: 1rem;
+}
+
+.news-images h5 {
+    margin-bottom: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.line {
+    background-color: #4ec0aa;
+    width: 10vw;
+    height: 0.8vh;
+}
+
+.news-images button {
+    width: 8vw;
+    height: 5vh;
+    margin-top: 2vh;
+    background-color: #4ec0aa;
+    border-color: #4ec0aa;
+    color: white;
+}
+
+/* footer-section */
+
+.footer-sec {
+    justify-items: center;
+    align-content: center;
+    background-color: #333333;
+    color: white;
+}
+
+.footer-content {
+    /* text-align: center; */
+    margin: 5vw;
+    width: 90%;
+}
+
+.get-in-touch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* LEFT COLUMN */
+.contact-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-details h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-details h1 span {
+    color: #17a789;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: white;
+}
+
+/* CONTACT INFO */
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact-info .label {
+    color: #17a789;
+
+}
+
+.contact-info {
+    color: #17a789;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.social-icons i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 18px;
+    color: white;
+}
+
+.social-icons i:hover {
+    background-color: #17a789;
+    border: none;
+}
+
+/* RIGHT COLUMN (FORM) */
+.contact-inputbox {
+    flex: 1;
+}
+
+.contact-inputbox form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.contact-inputbox form div {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-inputbox input,
+.contact-inputbox textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.contact-inputbox input:hover,
+.contact-inputbox textarea:hover {
+    border: 1px solid #17a789;
+}
+
+.contact-inputbox input:focus::placeholder,
+.contact-inputbox textarea:focus::placeholder {
+    color: #17a789;
+    /* blue on focus */
+}
+
+.contact-inputbox input:hover::placeholder,
+.contact-inputbox textarea:hover::placeholder {
+    color: #17a789;
+}
+
+.contact-inputbox textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.contact-inputbox button {
+    background: #17a789;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 40%;
+    margin-top: 30px;
+}
+
+.contact-inputbox button:hover {
+    background: #0056b3;
+}
+
+.footer {
+    background-color: #555;
+    padding: 15px 12px;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    margin-bottom: 0;
+}
